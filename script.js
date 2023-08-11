@@ -8,7 +8,7 @@ function setClock(){
 	const currentDate=new Date()
 	const secondRatio=currentDate.getSeconds()/60
 	const minutesRatio=(secondRatio+currentDate.getMinutes())/60
-	const hourRatio=(minutesRatio+5+currentDate.getHours())/60
+	const hourRatio=(minutesRatio+currentDate.getHours())/12
 
 	setrotation(secondHand, secondRatio)
 	setrotation(minuteHand, minutesRatio)
